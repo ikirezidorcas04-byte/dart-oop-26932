@@ -11,6 +11,10 @@ class BusCard {
     return _owner;
   }
 
+  int get balance {
+    return _balance;
+  }
+
   set owner(String newName) {
     if (newName.length < 3) {
       print('Error: name too short');
