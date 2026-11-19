@@ -68,3 +68,24 @@ class StudentCard extends BusCard {
   }
 
 }
+
+void main() {
+  BusCard card = BusCard('Ikirezi drocas', 1320);
+  card.owner = 'Al';
+  card.showInfo();
+
+  card.owner = 'Ikirezi drocas';
+  card.showInfo();
+
+  card.topUp(100);
+  card.topUp(2000);
+
+  card.pay(232);
+  card.pay(232);
+  card.showInfo();
+
+  StudentCard studentCard = StudentCard('Ikirezi drocas', 1320, 12);
+
+  studentCard.pay(232);
+  studentCard.showInfo();
+}
