@@ -36,4 +36,13 @@ class BusCard {
     }
   }
 
+  void pay(int fare) {
+    if (fare > _balance) {
+      print('Card declined');
+    } else {
+      _balance = _balance - fare;
+      print('Paid $fare RWF');
+    }
+  }
+
 }
