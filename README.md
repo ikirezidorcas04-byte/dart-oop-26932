@@ -64,3 +64,5 @@ Real output:
 ```
 
 Was I right? Yes.
+
+Output verified: prediction matches real output.
